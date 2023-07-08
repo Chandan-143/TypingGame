@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Modal -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+
+      
+    <div class="modal fade c_remove" id="regitrationModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-justify " id="exampleModalLabel">Registration Page</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+                            <label for="first_name" class="form-label">First Name</label>
+                            <input type="text" name="first_name" class="form-control" id="first_name" aria-describedby="Close" placeholder="Enter Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="last_name" class="form-label">Last Name</label>
+                            <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Enter Your Last Name">
+                        </div>
+                        <!-- <div class="mb-3">
+                            <input type="number" class="form-control" id="chhose_number" placeholder="Choose Your Time">
+                        </div> -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="refresh()">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="saveRagisterName()">Save changes</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container c_count">
+        <section class="c_section border border-5 border-info-subtle rounded-5 c_count h-100 overflow-hidden">
+            <div class="row m-0 h-100">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 c_tbdr p-0" style="background-color: #efffd7;">
+                    <div class="custom_hgt1 c_tbdr mb-3">
+                        <div class="overflow-auto custom_content_hgt mt-3 p-1 c_active pt-0 ps-3 pe-3 text-success fs-4 lh-base fw-semibold">
+                            "Always remember that you are absolutely unique. Just like everyone else." -Margaret Mead
+                        </div>
+
+                    </div>
+                    <div class="c_keyboard custom_hgt1 c_tbdr p-2 pt-2 pb-2 c_bg rounded-3"
+                        style="width: 95%;margin: 0 auto;">
+                        <div class="c_btn_wrap mb-2 d-lg-flex justify-content-lg-between btn-row1">
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active num_num">~`</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">1</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">2</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">3</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">4</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">5</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">6</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">7</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">8</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">9</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">0</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">- _</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">= +</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_w_custom">back</button>
+                        </div>
+
+                        <div class="c_btn_wrap mb-2 d-lg-flex justify-content-lg-between">
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active ">Tab</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_q">Q</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_w">W</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_e">E</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_r">R</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_t">T</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_y">Y</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_u">U</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_i">I</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_o">O</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_p">P</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">&lbrace; [</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">&rbrace; ]</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">| \</button>
+                        </div>
+
+                        <div class="c_btn_wrap mb-2 d-lg-flex justify-content-lg-between">
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_w_custom">Caps</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_a c_active">A</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_s">S</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_d">D</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_f">F</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_g">G</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_h">H</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_j">J</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_k">K</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_l">L</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">: ;</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">"" '</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_w_custom">Enter</button>
+                        </div>
+
+                        <div class="c_btn_wrap mb-2 d-lg-flex justify-content-lg-between">
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_w_custom">Shift</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_z">Z</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_x">X</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_c">C</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_v">V</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_b">B</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_n">N</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_m">M</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">&lt; ,</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">&gt; .</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">? /</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_w_custom">Shfit</button>
+                        </div>
+
+                        <div class="c_btn_wrap mb-1 d-lg-flex justify-content-lg-between">
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_w_custom">ctrl</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">fn</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">Win</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">alt</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active c_w_custom_space c_space">space</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">alt</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">ctrl</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">&uparrow;</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">&leftarrow;</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">&rightarrow;</button>
+                            <button onclick="playSound()" class="btn c_btn1 p-1 c_active">&downarrow;</button>
+                        </div>
+                    </div>
+
+                    <div class="custom_hanc_hgt c_tbdr c_hanc_img mx-auto">
+                        <div class="rounded-circle bg-danger c_circle position-absolute c_left_pinky l_pinky"></div>
+                        <div class="rounded-circle bg-danger c_circle position-absolute c_right_pinky l_ring"></div>
+                        <div class="rounded-circle bg-danger c_circle position-absolute c_middle_pinky l_middle"></div>
+                        <div class="rounded-circle bg-danger c_circle position-absolute c_index_pinky l_index"></div>
+                        <div class="rounded-circle bg-danger c_circle position-absolute c_thumb_pinky l_thumb"></div>
+                        <div class="rounded-circle bg-danger c_circle position-absolute c_r_thumb r_thumb"></div>
+                        <div class="rounded-circle bg-danger c_circle position-absolute c_index r_index"></div>
+                        <div class="rounded-circle bg-danger c_circle position-absolute c_r_middle r_middle"></div>
+                        <div class="rounded-circle bg-danger c_circle position-absolute c_r_ring r_ring"></div>
+                        <div class="rounded-circle bg-danger c_circle position-absolute c_r_pinky r_pinky"></div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 c_tbdr p-0" style="background-color: #d2f59f;">
+                    <h1 class="pb-2 m-3 mt-4 p-0 mb-1 fs-6 fw-bold c_welcome">Welcome</h2>
+                    <h2 class="pb-2 border-bottom border-dark-subtle m-3 mt-4 p-0 mb-1 fs-6 fw-bold">Time</h2>
+                    <h3 class="pb-2 m-3 display-3 fw-bold p-0 mt-0 c_duration">04:00</h3>
+                    <div class="ms-3 mt-5">
+                        <button class="btn btn-outline-success btn-lg mb-3" onclick="start()">Start</button>
+                        <button class="btn btn-outline-danger btn-lg mb-3">Reset</button>
+                        
+                        <audio controls class="invisible c_audio">
+                            <source src="./sound/Studio_Project_V1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+.c_myselect {
+    /* height: 600px; */
+}
+.c_tbdr {
+    /* border:  dashed red 1px; */
+}
+.c_count {
+    /* height: 600px; */
+}
+.text-justify{
+    text-align:justify !important;
+    position: relative;
+    left: 143px;
+}
+.custom_content_hgt {
+    height: 150px;
+}
+.custom_hgt {
+    height: 190px;
+}
+.custom_hanc_hgt {
+    height: 237px;
+}
+.c_hanc_img {
+    background: url("../image/2.png") no-repeat center bottom/contain;
+    width: 480px;
+    height: 270px;
+}
+
+.c_btn1 {
+width: 50px;
+height: 50px;
+
+/* box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.600); */
+/* box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.600); */
+
+border-right-style: outset #444343;
+border-collapse: normal;
+border-style: outset;
+-moz-border-style: outset;
+-webkit-border-style: outset;
+border-width: 5px;
+border-radius: 5px;
+background-color: #1b5971;
+text-align: center;
+/* border-color: #2a697c; */
+color: #ffffff;
+font-size: 14px;
+line-height: 10px;
+transition: 1s linear linear;
+
+}
+.c_active{
+    /* background-color: aliceblue; */
+    transform: translate(2px,2px);
+    box-shadow: 1px 1px 0px rgba(0,0,0,0.8) !important;
+}
+
+.c_btn1:hover {
+    color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.813);
+    
+}
+.c_btn1:focus-visible {
+    color: #ffffff;
+    background-color: #444343;
+    border-width: 2px;
+    /* border-color: rgba(117, 107, 107, 0.81); */
+    border: none;
+    border-style: inset;
+    box-shadow: none;
+
+}
+.c_btn1.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+    color: #ffffff;
+    background-color: #444343;
+    border-width: 2px;
+    border-color: rgba(117, 107, 107, 0.81);
+    border-style: inset;
+}
+.c_keyboard {
+    min-height: 224px;
+    overflow: auto;
+    height: 302px;
+}
+
+
+.c_bg {
+    background-color: #2a697c;
+}
+
+.c_w_custom {
+    width: 80px;
+}
+.c_w_custom_space {
+    width: 294px;
+}
+
+.c_hanc_dot {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+
+/* all finger color are showing doted on red color  */
+
+
+.c_circle{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.c_left_pinky{
+    top: 585px;
+    left: 410px;
+   
+}
+.c_right_pinky{
+    left: 443px;
+    top: 530px;
+}
+.c_index_pinky{
+    left: 530px;
+    top: 527px;
+}
+.c_middle_pinky{
+    left: 485px;
+    top: 512px;
+}
+.c_thumb_pinky{
+    top: 658px;
+    left: 580px;
+}
+.c_r_thumb{
+    top: 658px;
+    left: 634px;
+}
+.c_index{
+    left: 710px;
+    top: 527px;
+}
+.c_r_middle{
+    left: 758px;
+    top: 512px;
+}
+.c_r_ring{
+    left: 800px;
+    top: 530px;
+}
+.c_r_pinky{
+    left: 850px;
+    top: 585px;
+}
+
